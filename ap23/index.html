@@ -1,202 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anna King | Landing Page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ABC247 | Order Now on WhatsApp</title>
+  <meta name="description" content="ABC247 serves delicious, freshly prepared meals. Order now via WhatsApp for quick service and great taste." />
+  <meta property="og:title" content="ABC247 | Order Now on WhatsApp" />
+  <meta property="og:description" content="ABC247 serves delicious, freshly prepared meals. Order now via WhatsApp for quick service and great taste." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="ABC247 | Order Now on WhatsApp" />
+  <meta name="twitter:description" content="ABC247 serves delicious, freshly prepared meals. Order now via WhatsApp for quick service and great taste." />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#e0932a',
+            'gold-light': '#f0b968',
+            whatsapp: '#00c063',
+            'whatsapp-foreground': '#ffffff',
+            'foreground-inverse': '#fdfaf7',
+            'muted-inverse': '#c9a9a0',
+            ring: '#e0932a',
+          },
+          borderRadius: {
+            sm: '6px',
+            md: '8px',
+            lg: '10px',
+            xl: '14px',
+            '2xl': '18px',
+          },
+        },
+      },
+    };
+  </script>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+    .bg-restaurant {
+      background-image: linear-gradient(135deg, oklch(20% .08 20), oklch(26% .11 15), oklch(13% .05 10));
     }
-
-    body {
-      background: #000;
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      background: #000;
-    }
-li{max-width: 500px;margin: 0 auto;color: #ccc;}
-
-    /* Top Image Section */
-    .hero img {
-      width: 100%;
-      display: block;
-    }
-
-    /* CTA Section */
-    .cta {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .cta button {
-      background: #25d366;
-      color: #fff;
-      border: none;
-      padding: 14px 24px;
-      font-size: 16px;
-      border-radius: 30px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .cta button:hover {
-      opacity: 0.9;
-    }
-
-    /* Content Section */
-    .content {
-      padding: 24px 20px 40px;
-    }
-
-    .content h2 {
-      font-size: 30px;
-      margin-bottom: 12px;
-      text-align: center;
-    }
-
-    .content p {
-      font-size: 16px;
-      margin-bottom: 14px;
-      color: #ccc;
-    }
-
-    /* Footer Buttons */
-    .links {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      padding: 20px;
-    }
-
-    .links a {
-      text-decoration: none;
-      background: #1a1a1a;
-      color: #fff;
-      padding: 12px;
-      text-align: center;
-      border-radius: 8px;
-      font-size: 14px;
-    }
-
-    .links a:hover {
-      background: #2a2a2a;
-    }
-
-    footer {
-      padding: 16px;
-      text-align: center;
-      font-size: 12px;
-      color: #777;
-    }
+    .text-foreground { color: #fdfaf7; }
   </style>
-
-
-<script src="../tracking.js"></script>
-
-
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "ABC247",
+    "servesCuisine": "Multi-Cuisine",
+    "priceRange": "$$"
+  }
+  </script>
 </head>
-
-
-
 <body>
-  <div class="container">
+  <main class="min-h-screen bg-restaurant bg-fixed text-foreground-inverse">
+    <header class="sticky top-0 z-50 border-b border-foreground-inverse/10 bg-foreground-inverse/5 backdrop-blur-md">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <div class="border-2 border-gold px-3 py-1 text-2xl font-bold tracking-[0.2em] text-gold">ABC247</div>
+        <div class="relative">
+          <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-dropdown" class="text-sm font-medium text-foreground-inverse transition-colors hover:text-gold">Menu</button>
+          <div id="menu-dropdown" class="absolute right-0 mt-3 hidden w-44 overflow-hidden rounded-md border border-foreground-inverse/10 bg-foreground-inverse/5 shadow-lg backdrop-blur-md">
+            <a href="#menu" class="menu-link block px-4 py-2.5 text-sm font-medium text-foreground-inverse transition-colors hover:bg-gold/10 hover:text-gold">Menu</a>
+            <a href="http://wa.link/marathanew" target="_blank" rel="noopener noreferrer" class="menu-link block px-4 py-2.5 text-sm font-medium text-foreground-inverse transition-colors hover:bg-gold/10 hover:text-gold">Order on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </header>
+				 <a href="https://www.247l.ink/s/IPL"><img style="display:block; margin:auto;width:100%" src=600x1100.png></a>
+    <section class="relative px-4 py-24 md:py-32">
+      <div class="mx-auto max-w-4xl text-center">
+        <p class="mb-4 text-sm font-medium uppercase tracking-widest text-gold">Welcome to</p>
+        <h1 class="text-4xl font-bold tracking-tight md:text-6xl">ABC247</h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-inverse md:text-xl">Fresh ingredients, bold flavors, and a warm dining experience — delivered straight to your table or ready for pickup. Order in seconds on WhatsApp.</p>
+        <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a href="http://wa.link/marathanew" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring bg-whatsapp text-whatsapp-foreground shadow hover:bg-whatsapp/90 h-10 rounded-md px-8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+            WhatsApp Now
+          </a>
+          <a href="#menu" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring border border-gold bg-transparent text-gold shadow-sm hover:bg-gold/10 h-10 rounded-md px-8">Explore Menu</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- Image on Top -->
-    <div class="hero">
-    <a href="https://admin.flipchat.link/pro/ipl2026" onclick="gtag_report_conversion()">  <img src="600x1100.png" alt="Anna King Banner" />
-    </div>
+    <section class="px-4 py-20">
+      <div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="rounded-2xl border border-foreground-inverse/10 bg-foreground-inverse/5 p-8 transition-colors hover:bg-foreground-inverse/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-10 w-10 text-gold" aria-hidden="true"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"></path><path d="M6 17h12"></path></svg>
+          <h3 class="mt-5 text-xl font-semibold">Master Chefs</h3>
+          <p class="mt-3 text-muted-inverse">Our dishes are crafted by experienced chefs who bring authentic flavors to every plate.</p>
+        </div>
+        <div class="rounded-2xl border border-foreground-inverse/10 bg-foreground-inverse/5 p-8 transition-colors hover:bg-foreground-inverse/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-10 w-10 text-gold" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+          <h3 class="mt-5 text-xl font-semibold">Quick Service</h3>
+          <p class="mt-3 text-muted-inverse">From kitchen to table in minutes. Perfect for busy days and hungry guests.</p>
+        </div>
+        <div class="rounded-2xl border border-foreground-inverse/10 bg-foreground-inverse/5 p-8 transition-colors hover:bg-foreground-inverse/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-10 w-10 text-gold" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
+          <h3 class="mt-5 text-xl font-semibold">Fresh Ingredients</h3>
+          <p class="mt-3 text-muted-inverse">We source quality produce daily so every bite tastes its best.</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- Button Section -->
-    <div class="cta">
-      <button >WhatsApp Now</button></a>
-    </div>
+    <section id="menu" class="bg-foreground-inverse/[0.03] px-4 py-20">
+      <div class="mx-auto max-w-5xl">
+        <p class="text-center text-sm font-medium uppercase tracking-widest text-gold">Our Menu</p>
+        <h2 class="mt-2 text-center text-3xl font-bold md:text-4xl">Signature Dishes</h2>
+        <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div class="flex items-start justify-between gap-4 rounded-xl border border-foreground-inverse/10 bg-foreground-inverse/5 p-6">
+            <div>
+              <div class="flex items-center gap-3">
+                <h3 class="text-lg font-semibold">ABC247 Special Platter</h3>
+                <span class="rounded-full bg-gold/10 px-2 py-0.5 text-xs font-medium text-gold">Chef's Choice</span>
+              </div>
+              <p class="mt-2 text-sm text-muted-inverse">A generous mix of grilled specialties, fresh sides, and house sauces.</p>
+            </div>
+            <span class="whitespace-nowrap text-lg font-bold text-gold">$18</span>
+          </div>
+          <div class="flex items-start justify-between gap-4 rounded-xl border border-foreground-inverse/10 bg-foreground-inverse/5 p-6">
+            <div>
+              <div class="flex items-center gap-3">
+                <h3 class="text-lg font-semibold">Classic Burger &amp; Fries</h3>
+              </div>
+              <p class="mt-2 text-sm text-muted-inverse">Juicy beef patty with melted cheese, crispy lettuce, and golden fries.</p>
+            </div>
+            <span class="whitespace-nowrap text-lg font-bold text-gold">$12</span>
+          </div>
+          <div class="flex items-start justify-between gap-4 rounded-xl border border-foreground-inverse/10 bg-foreground-inverse/5 p-6">
+            <div>
+              <div class="flex items-center gap-3">
+                <h3 class="text-lg font-semibold">Spicy Pasta Alfredo</h3>
+                <span class="rounded-full bg-gold/10 px-2 py-0.5 text-xs font-medium text-gold">Popular</span>
+              </div>
+              <p class="mt-2 text-sm text-muted-inverse">Creamy Alfredo pasta with a kick of chili and parmesan crumble.</p>
+            </div>
+            <span class="whitespace-nowrap text-lg font-bold text-gold">$14</span>
+          </div>
+          <div class="flex items-start justify-between gap-4 rounded-xl border border-foreground-inverse/10 bg-foreground-inverse/5 p-6">
+            <div>
+              <div class="flex items-center gap-3">
+                <h3 class="text-lg font-semibold">Garden Fresh Salad</h3>
+              </div>
+              <p class="mt-2 text-sm text-muted-inverse">Seasonal greens, cherry tomatoes, olives, and lemon herb dressing.</p>
+            </div>
+            <span class="whitespace-nowrap text-lg font-bold text-gold">$10</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Content Section -->
-    <div class="content">
-      <h2>100% Original Services | Trusted Service Provider</h2>
-      <p>
-        Anna King Consultancy — Empowering Businesses Through Data, Design & Decisions Welcome to Fun888 Consultancy, India’s trusted partner for business growth, digital transformation, and conversion strategy. Based in Pune, we specialize in helping startups and established enterprises turn data insights into measurable results. Whether you’re struggling with low lead quality, high churn rates, or inefficient marketing spend, we bring clarity, structure, and strategy that deliver tangible outcomes.
-      </p></br>
-      <p>
-        Our philosophy is simple: growth begins with understanding. By combining behavioral psychology, marketing analytics, and customer journey mapping, we uncover what truly drives your users — and use that knowledge to design experiences that convert. At Fun888 Consultancy, every decision is supported by research and every recommendation is measurable.
-      </p></br>
-      <p>
-        Our Mission — Conversions That Create Confidence Many businesses measure success in clicks and followers. We measure it in actions and outcomes. Our mission is to help Indian brands move beyond surface-level marketing into data-driven, conversion-optimized growth. We build strategies that don’t just attract attention — they inspire action, build trust, and sustain profitability.
-      </p></br>
-      <p>
-        Through our structured growth programs, we ensure that every rupee you invest delivers real returns. Our consultants dive deep into your funnel, identify bottlenecks, and design measurable solutions to improve acquisition, activation, and retention.
-      </p></br>
+    <section class="px-4 py-20">
+      <div class="mx-auto max-w-5xl">
+        <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+          <div>
+            <p class="text-sm font-medium uppercase tracking-widest text-gold">Why ABC247</p>
+            <h2 class="mt-2 text-3xl font-bold md:text-4xl">A Dining Experience Worth Remembering</h2>
+            <ul class="mt-8 space-y-4">
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
+                <span class="text-muted-inverse">Award-winning recipes loved by regulars.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden="true"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"></path></svg>
+                <span class="text-muted-inverse">Cooked to order with real fire and passion.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span class="text-muted-inverse">Easy location and fast WhatsApp ordering.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                <span class="text-muted-inverse">Consistently rated for taste and service.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="rounded-2xl border border-foreground-inverse/10 bg-foreground-inverse/5 p-8">
+            <blockquote class="text-lg italic leading-relaxed text-muted-inverse">“The food was amazing and the WhatsApp ordering made it so simple. ABC247 is now our go-to spot for family dinners.”</blockquote>
+            <p class="mt-4 font-semibold text-gold">— A Happy Guest</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <p>
-        
-Our Core Services 1. Business & Marketing Strategy We partner with leadership teams to create a clear path to growth. From go-to-market planning to revenue optimization, our consulting process blends research, positioning, and performance tracking to ensure alignment with business goals.
-      </p></br>
-      <p>
-<ol>
-       <li> Conversion Optimization (CRO) Turning visitors into customers is both an art and a science. We apply heatmaps, user testing, and A/B experiments to refine your digital experience. Every test is designed to improve engagement, boost trust, and increase conversion rates sustainably.</li>
-<li>Data & Analytics Setup We implement advanced analytics tools that reveal where your leads come from, what actions they take, and what influences their decisions. By integrating platforms like Google Analytics, Tag Manager, and CRM data, we create visibility across your entire funnel.</li>
-<li>Brand Positioning & Communication In a crowded digital world, clarity wins. We craft persuasive messaging and visual design that differentiate your brand and strengthen credibility. Our storytelling frameworks are built to resonate emotionally while aligning with your strategic objectives.</li>
-<li>Customer Retention & Loyalty Systems Growth doesn’t end with acquisition. We help brands design retention flows — including email sequences, loyalty programs, and reactivation campaigns — that increase lifetime value and reduce churn.</li><ol>
-      </p></br>
+    <section class="bg-foreground-inverse/[0.05] px-4 py-24">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-3xl font-bold md:text-5xl">Ready to Taste ABC247?</h2>
+        <p class="mx-auto mt-4 max-w-xl text-lg text-muted-inverse">Skip the wait. Message us on WhatsApp and we will confirm your order instantly.</p>
+        <div class="mt-10">
+          <a href="http://wa.link/marathanew" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring bg-whatsapp text-whatsapp-foreground shadow hover:bg-whatsapp/90 h-10 rounded-md px-8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+            WhatsApp Now
+          </a>
+        </div>
+        <p class="mt-6 text-sm text-muted-inverse">No app needed. Just tap and chat.</p>
+      </div>
+    </section>
 
- <p>
-        
-Our Approach — The Fun888 Method Our consulting process is transparent, agile, and performance-driven. We follow a simple but effective four-stage method:
-      </p></br>
-
-
- <p>
-        
-Discover: We begin with deep discovery — understanding your customers, competitors, and performance data. Diagnose: Using analytics and behavioral insights, we identify what’s working and what’s holding you back. Design: We craft targeted solutions — from new landing pages to automated funnels — designed for measurable impact. Deliver: We execute, monitor, and optimize continuously to ensure your results improve month after month. Industries We Empower Over the years, Fun888 Consultancy has worked with businesses across a wide spectrum of industries, each with unique challenges and opportunities:
-      </p></br>
-
-
- <p>
-        
-Technology & SaaS: Simplifying onboarding and boosting trial-to-paid conversions. Retail & E-Commerce: Increasing cart completion rates and repeat purchases. Finance & Insurance: Streamlining lead qualification and improving trust-driven conversion funnels. Healthcare & Wellness: Building compliant, conversion-optimized patient acquisition systems. Education & Training: Enhancing enrollment rates through persuasive communication and optimized flows. Why Businesses Trust Fun888 Consultancy What sets Fun888 Consultancy apart is our commitment to clarity, ethics, and measurable growth. We don’t sell shortcuts; we build systems. We’re known for combining empathy with analytics, ensuring every campaign respects both user intent and business goals.
-      </p></br>
-
-
- <p>
-Our clients stay with us not because they have to — but because they see results. From better lead quality to improved ROI, every engagement brings accountability and transparency. We work as your strategic partner, not an external vendor.
-      </p></br>
-
-
- <p>
-Our Promise to You When you work with Fun888 Consultancy, you gain a partner obsessed with outcomes. We promise:
-      </p></br>
-
- <p>
-Data-driven recommendations that are actionable and clear. Ethical marketing that prioritizes user trust. Transparent reporting and regular performance reviews. Ongoing collaboration focused on continuous improvement. Start Your Growth Journey with Fun888 Consultancy Book a discovery session today and see how we can help you turn potential into performance. Let’s define your biggest opportunities and design a roadmap for measurable, sustainable growth.
-      </p></br>
-
- <p>
-Fun888 Consultancy 401, Solaris Business Hub, Baner, Pune, Maharashtra, India — 411045 📞 
-      </p></br>
-    </div>
-
-    <!-- Extra Links -->
-    <div class="links">
-      <a href="#">Subscribe on Twitch</a>
-      <a href="#">Become a Patron</a>
-      <a href="#">Shop My Work</a>
-      <a href="#">Join My Discord</a>
-    </div>
-
-    <footer>
-      © 2026 Anna King. All rights reserved.
+    <footer class="border-t border-foreground-inverse/10 px-4 py-10">
+      <div class="mx-auto max-w-6xl text-center">
+        <div class="inline-block border-2 border-gold px-3 py-1 text-xl font-bold tracking-[0.2em] text-gold">ABC247</div>
+        <p class="mt-4 text-sm text-muted-inverse">© 2026 ABC247. All rights reserved.</p>
+        <p class="mt-1 text-sm text-muted-inverse">Order on WhatsApp: <a href="http://wa.link/marathanew" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">wa.link/abc247</a></p>
+      </div>
     </footer>
+  </main>
+  <script>
+    (function () {
+      var toggle = document.getElementById('menu-toggle');
+      var dropdown = document.getElementById('menu-dropdown');
+      if (!toggle || !dropdown) return;
 
-  </div>
+      function closeMenu() {
+        dropdown.classList.add('hidden');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+      function openMenu() {
+        dropdown.classList.remove('hidden');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
+
+      toggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (dropdown.classList.contains('hidden')) {
+          openMenu();
+        } else {
+          closeMenu();
+        }
+      });
+
+      dropdown.querySelectorAll('.menu-link').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!dropdown.contains(e.target) && e.target !== toggle) {
+          closeMenu();
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeMenu();
+      });
+    })();
+  </script>
 </body>
 </html>
